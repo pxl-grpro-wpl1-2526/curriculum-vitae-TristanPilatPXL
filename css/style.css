@@ -21,3 +21,20 @@ header a {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
 }
+.language-table, .language-table th, .language-table td {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    width: auto;
+    margin-right: auto;
+}
+.language-table th {
+    background-color: royalblue;
+    color: white;
+    text-align: left;
+}
+.language-table td {
+    background-color: lightblue;
+}
+
