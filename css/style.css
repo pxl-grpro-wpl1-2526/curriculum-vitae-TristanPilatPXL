@@ -3,3 +3,16 @@
     /*padding: 0;
     margin: 0;*/
 }
+.Foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+    display: flex;
+    margin-left: auto;
+    margin-top: -75px;
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+}
