@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: white;
     /*padding: 0;
     margin: 0;*/
 }
+
 body {
 
     background-image: url('/images/achetergrond2.jpg');
@@ -12,6 +13,35 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
+h2 {
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+header h1 {
+    flex: 1;
+    background-color: #D94F27;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: underline;
+    border: 5px solid black;
+}
+
+header a {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
 .Foto {
     width: 100%;
     height: 100%;
@@ -24,6 +54,64 @@ body {
 .Foto:hover {
     box-shadow: 0 0 20px white;
 }
+
+
+#introductie {
+    width: 40%;
+    background-color: black;
+    border: 5px solid #D94F27;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+#opleiding {
+    width: 25%;
+    background-color: black;
+    border: 5px solid #D94F27;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+#vaardigheden-en-kennis {
+    width: 20%;
+    background-color: black;
+    border: 5px solid #D94F27;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+#talen {
+    width: 16%;
+    background-color: black;
+    border: 5px solid #D94F27;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+#ervaring {
+    width: 40%;
+    background-color: black;
+    border: 5px solid #D94F27;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+#Hobbys {
+    width: 15%;
+    background-color: black;
+    border: 5px solid #D94F27;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+
 .language-table {
     border-collapse: collapse;
     width: auto;
@@ -48,3 +136,43 @@ body {
     color: black;
     padding: 8px 10px;
 }
+
+.language-table th:hover {
+    background-color: black;
+    color: white;
+}
+
+.language-table td:hover {
+    background-color: black;
+    color: white;
+}
+
+
+footer {
+    display: flex;
+    background-color: #D94F27;
+    border-radius: 10px;
+    color: white;
+    border: 3px solid black;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-top: 30px;
+}
+
+.scroll-to-top {
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+.scroll-to-top:hover {
+    color: black;
+}
+
+
