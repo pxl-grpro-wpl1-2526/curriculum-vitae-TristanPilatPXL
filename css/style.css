@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,12 +18,11 @@ h2 {
     margin-top: 0;
 }
 
-
-
 header {
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
+    gap: 1rem;
 }
 
 header h1 {
@@ -57,69 +55,55 @@ header a {
     box-shadow: 0 0 20px white;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 15px;
+}
 
-
-#introductie {
-    width: 40%;
+section {
     background-color: black;
     border: 5px solid #D94F27;
     border-radius: 15px;
+    padding: 30px;
     margin-top: 30px;
-    padding: 15px;
+}
+
+#introductie {
+    flex: 1 1 55%;
+    min-width: 300px;
 }
 
 #opleiding {
-    width: 37%;
-    background-color: black;
-    border: 5px solid #D94F27;
-    border-radius: 15px;
-    margin-top: 30px;
-    padding: 30px;
+    flex: 1 1 40%;
+    min-width: 300px;
 }
 
 #vaardigheden-en-kennis {
-    width: 30%;
-    background-color: black;
-    border: 5px solid #D94F27;
-    border-radius: 15px;
-    margin-top: 30px;
-    padding: 30px;
+    flex: 1 1 48%;
+    min-width: 300px;
 }
 
 #talen {
-    width: 20%;
-    background-color: black;
-    border: 5px solid #D94F27;
-    border-radius: 15px;
-    margin-top: 30px;
-    padding: 15px;
+    flex: 1 1 48%;
+    min-width: 250px;
 }
 
 #ervaring {
-    width: 40%;
-    background-color: black;
-    border: 5px solid #D94F27;
-    border-radius: 15px;
-    margin-top: 30px;
-    padding: 30px;
+    flex: 1 1 58%;
+    min-width: 300px;
 }
 
 #Hobbys {
-    width: 15%;
-    background-color: black;
-    border: 5px solid #D94F27;
-    border-radius: 15px;
-    margin-top: 30px;
-    padding: 30px;
+    flex: 1 1 38%;
+    min-width: 250px;
     margin-bottom: 30px;
 }
 
-
-
 .language-table {
     border-collapse: collapse;
-    width: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .language-table,
@@ -133,12 +117,14 @@ header a {
     color: white;
     text-align: left;
     padding: 8px 10px;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .language-table td {
     background-color: white;
     color: black;
     padding: 8px 10px;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .language-table th:hover {
@@ -150,8 +136,6 @@ header a {
     background-color: black;
     color: white;
 }
-
-
 
 .language-mobile {
     display: none;
@@ -170,7 +154,6 @@ header a {
     color: #D94F27;
 }
 
-
 footer {
     display: flex;
     background-color: #D94F27;
@@ -179,9 +162,8 @@ footer {
     border: 3px solid black;
     justify-content: space-between;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 30px;
+    padding: 15px;
+    margin: 30px 15px 0;
 }
 
 .scroll-to-top {
@@ -222,44 +204,23 @@ footer {
         margin-top: 10px;
     }
 
-    #introductie {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    main {
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 20px;
     }
 
-    #opleiding {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #vaardigheden-en-kennis {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #talen {
-        width: 50%;        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #ervaring {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #Hobbys {
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
+    section {
+        flex: 1 1 100%;
+        width: 100%;
+        min-width: auto;
+        padding: 15px;
     }
 
     footer {
         flex-direction: column;
         text-align: center;
+        gap: 10px;
     }
 
     .language-table {
@@ -281,28 +242,32 @@ footer {
         height: 150px;
     }
 
+    main {
+        gap: 20px;
+    }
+
     #introductie {
-        width: 60%;
+        flex: 1 1 100%;
     }
 
     #opleiding {
-        width: 50%;
+        flex: 1 1 100%;
     }
 
     #vaardigheden-en-kennis {
-        width: 50%;
+        flex: 1 1 48%;
     }
 
     #talen {
-        width: 40%;
+        flex: 1 1 48%;
     }
 
     #ervaring {
-        width: 60%;
+        flex: 1 1 60%;
     }
 
     #Hobbys {
-        width: 22%;
+        flex: 1 1 35%;
     }
 
     .language-table {
@@ -331,4 +296,3 @@ footer {
         display: none;
     }
 }
-
