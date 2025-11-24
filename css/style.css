@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: arial, sans-serif;
+    color: white;
     /*padding: 0;
     margin: 0;*/
 }
@@ -22,4 +23,28 @@ body {
 }
 .Foto:hover {
     box-shadow: 0 0 20px white;
+}
+.language-table {
+    border-collapse: collapse;
+    width: auto;
+    margin-right: auto;
+}
+
+.language-table,
+.language-table th,
+.language-table td {
+    border: 2px solid black;
+}
+
+.language-table th {
+    background-color: #D94F27;
+    color: white;
+    text-align: left;
+    padding: 8px 10px;
+}
+
+.language-table td {
+    background-color: white;
+    color: black;
+    padding: 8px 10px;
 }
