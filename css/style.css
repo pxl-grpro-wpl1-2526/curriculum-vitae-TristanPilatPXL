@@ -5,107 +5,21 @@
     margin: 0;*/
 }
 body {
-    background: linear-gradient(to bottom, white, lightblue);
-}
 
-header a {
-    display: block;
-    width: 150px;
-    margin-left: auto;
-    margin-top: -75px;
+    background-image: url('/images/achetergrond2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-header h1{
-    display: flex;
-    background-color: royalblue;
-    border-radius: 5px;
-    color: white;
-    border: black solid 3px;
-}
-
-
 .Foto {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid black;
+    border: 5px solid black;
     display: block;
-    &:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }
+    transition: box-shadow 0.2s;
 }
-.language-table, .language-table th, .language-table td {
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    border-collapse: collapse;
-    width: auto;
-    margin-right: auto;
+.Foto:hover {
+    box-shadow: 0 0 20px white;
 }
-.language-table th {
-    background-color: royalblue;
-    color: white;
-    text-align: left;
-}
-.language-table td {
-    background-color: lightblue;
-}
-footer {
-    border: black solid 3px;
-    border-radius: 5px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: royalblue;
-    color: white;
-}
-
-.scroll-to-top {
-    background-color: royalblue;
-    color: white;
-    border: none;
-    &:hover {
-        color: lightblue;
-        text-decoration: underline;
-    }
-}
-
-
-
-.language-table th:hover {
-    background-color: darkblue;
-}
-.language-table td:hover {
-    background-color: deepskyblue;
-}
-@media (max-width: 575px) {
-    /* Mobiel */
-    body {
-        font-size: 14px;
-    }
-    header h1 {
-        font-size: 18px;
-    }
-}
-@media (min-width: 576px) and (max-width: 991px) {
-    /* Tablet */
-    body {
-        font-size: 16px;
-    }
-    header h1 {
-        font-size: 22px;
-    }
-}
-@media (min-width: 992px) {
-    /* Desktop */
-    body {
-        font-size: 18px;
-    }
-    header h1 {
-        font-size: 26px;
-        padding: 10px;
-    }
-}
-
