@@ -75,7 +75,6 @@ header a {
     object-fit: cover;
     border: 5px solid black;
     transition: box-shadow 0.2s;
-    object-position: center -8rem;
 
 
 
@@ -224,6 +223,11 @@ footer {
 }
 
 @media (max-width: 575px) {
+
+    .Foto {
+        object-position: center -5rem;
+    }.
+
     body {
         font-size: 15px;
     }
@@ -283,6 +287,10 @@ footer {
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
+
+    .Foto {
+        object-position: center -6rem;
+    }
     body {
         font-size: 16px;
     }
@@ -291,6 +299,8 @@ footer {
         width: 150px;
         height: 150px;
     }
+    object-position: center -20rem;
+
 
     main {
         gap: 20px;
@@ -349,4 +359,9 @@ footer {
     .language-mobile {
         display: none;
     }
+    .Foto {
+        object-position: center -8rem;
+    }
+
+
 }
