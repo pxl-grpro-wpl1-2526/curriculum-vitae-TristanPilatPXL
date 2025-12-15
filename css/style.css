@@ -2,38 +2,65 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     background-image: url('../images/achetergrond2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    padding-bottom: 1rem;
+
 }
+
+
 
 h2 {
     text-decoration: underline;
-    margin-top: 0;
 }
 
 header {
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
     gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.header-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+
+    background: #D94F27;
+    color: white;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 15px;
 }
 
 header h1 {
-    flex: 1;
-    background-color: #D94F27;
-    padding: 10px 12px;
-    border-radius: 10px;
-    color: white;
+    font-size: 2rem;
     text-decoration: underline;
-    border: 5px solid black;
 }
+
+.contact-info { /*ik weet dat de contact info niet nodig is ma maakt de cv wel af*/
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+}
+
+.contact-info span {
+    white-space: nowrap;
+}
+
 
 header a {
     display: block;
@@ -47,19 +74,32 @@ header a {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid black;
-    display: block;
     transition: box-shadow 0.2s;
+    object-position: center -8rem;
+
+
+
+
 }
 
 .Foto:hover {
     box-shadow: 0 0 20px white;
 }
+header a {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+
 
 main {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 0 15px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
 }
 
 section {
@@ -98,18 +138,19 @@ section {
 #Hobbys {
     flex: 1 1 38%;
     min-width: 250px;
-    margin-bottom: 30px;
 }
 
 .language-table {
     border-collapse: collapse;
     width: 100%;
+
 }
 
 .language-table,
 .language-table th,
 .language-table td {
     border: 2px solid black;
+
 }
 
 .language-table th {
@@ -137,6 +178,7 @@ section {
     color: white;
 }
 
+
 .language-mobile {
     display: none;
 }
@@ -150,7 +192,7 @@ section {
     border: 2px solid #D94F27;
 }
 
-.language-item strong {
+.language-item strong{
     color: #D94F27;
 }
 
@@ -230,6 +272,14 @@ footer {
     .language-mobile {
         display: block;
     }
+    #opleiding, #vaardigheden-en-kennis, #ervaring, #Hobbys {
+        padding-left: 20px;
+    }
+    .contact-info {
+        gap: 1rem;
+
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
@@ -276,6 +326,10 @@ footer {
 
     .language-mobile {
         display: none;
+    }
+    .contact-info {
+        gap: 1rem;
+
     }
 }
 
