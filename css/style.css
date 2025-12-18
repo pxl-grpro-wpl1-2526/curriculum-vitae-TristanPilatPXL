@@ -74,7 +74,6 @@ header a {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid black;
-    transition: box-shadow 0.2s;
 
 
 
@@ -83,7 +82,45 @@ header a {
 
 .Foto:hover {
     box-shadow: 0 0 20px white;
+    transition: box-shadow 0.2s;
+
 }
+#opleiding:hover {
+    box-shadow: 0 0 20px #D94F27;
+    transition: box-shadow 0.2s;
+
+}
+#introductie:hover {
+    box-shadow: 0 0 20px #D94F27;
+    transition: box-shadow 0.2s;
+
+}
+#vaardigheden-en-kennis:hover {
+    box-shadow: 0 0 20px #D94F27;
+    transition: box-shadow 0.2s;
+
+}
+#talen:hover {
+    box-shadow: 0 0 20px #D94F27;
+    transition: box-shadow 0.2s;
+
+}
+#talen:hover {
+    box-shadow: 0 0 20px #D94F27;
+    transition: box-shadow 0.2s;
+
+}
+#ervaring:hover { 
+    box-shadow: 0 0 20px #D94F27;
+    transition: box-shadow 0.2s;
+
+}
+    #Hobbys:hover {
+        box-shadow: 0 0 20px #D94F27;
+        transition: box-shadow 0.2s;
+
+    }
+
 header a {
     display: block;
     width: 200px;
@@ -285,6 +322,7 @@ footer {
     }
 
 }
+
 
 @media (min-width: 576px) and (max-width: 991px) {
 
