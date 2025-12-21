@@ -12,7 +12,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
     padding-bottom: 1rem;
 
 }
@@ -74,6 +73,8 @@ header a {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid black;
+    transition: transform .20s ease, box-shadow .20s ease, border-color .20s ease;
+
 
 
 
@@ -82,42 +83,48 @@ header a {
 
 .Foto:hover {
     box-shadow: 0 0 20px white;
-    transition: box-shadow 0.2s;
+    transform: translateY(-2px);
+
+
+
 
 }
 #opleiding:hover {
     box-shadow: 0 0 20px #D94F27;
-    transition: box-shadow 0.2s;
+    transform: translateY(-2px);
+
 
 }
 #introductie:hover {
     box-shadow: 0 0 20px #D94F27;
-    transition: box-shadow 0.2s;
+    transform: translateY(-2px);
+
 
 }
 #vaardigheden-en-kennis:hover {
     box-shadow: 0 0 20px #D94F27;
-    transition: box-shadow 0.2s;
+    transform: translateY(-2px);
+
 
 }
-#talen:hover {
-    box-shadow: 0 0 20px #D94F27;
-    transition: box-shadow 0.2s;
 
-}
 #talen:hover {
     box-shadow: 0 0 20px #D94F27;
-    transition: box-shadow 0.2s;
+    transform: translateY(-2px);
+
+
 
 }
 #ervaring:hover { 
     box-shadow: 0 0 20px #D94F27;
-    transition: box-shadow 0.2s;
+    transform: translateY(-2px);
+
 
 }
     #Hobbys:hover {
         box-shadow: 0 0 20px #D94F27;
-        transition: box-shadow 0.2s;
+        transform: translateY(-2px);
+
 
     }
 
@@ -149,31 +156,46 @@ section {
 #introductie {
     flex: 1 1 55%;
     min-width: 300px;
+    transition: transform .20s ease, box-shadow .20s ease, border-color .20s ease;
+
+
+
 }
 
 #opleiding {
     flex: 1 1 40%;
     min-width: 300px;
+    transition: transform .20s ease, box-shadow .20s ease, border-color .20s ease;
+
 }
 
 #vaardigheden-en-kennis {
     flex: 1 1 48%;
     min-width: 300px;
+    transition: transform .20s ease, box-shadow .20s ease, border-color .20s ease;
+
 }
 
 #talen {
     flex: 1 1 48%;
     min-width: 250px;
+    transition: transform .20s ease, box-shadow .20s ease, border-color .20s ease;
+
+
 }
 
 #ervaring {
     flex: 1 1 58%;
     min-width: 300px;
+    transition: transform .20s ease, box-shadow .20s ease, border-color .20s ease;
+
 }
 
 #Hobbys {
     flex: 1 1 38%;
     min-width: 250px;
+    transition: transform .20s ease, box-shadow .20s ease, border-color .20s ease;
+
 }
 
 .language-table {
@@ -186,6 +208,8 @@ section {
 .language-table th,
 .language-table td {
     border: 2px solid black;
+
+
 
 }
 
@@ -203,6 +227,8 @@ section {
     padding: 8px 10px;
     transition: background-color 0.2s, color 0.2s;
 }
+
+
 
 .language-table th:hover {
     background-color: black;
